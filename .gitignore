@@ -1,3 +1,7 @@
+.ghc*
 .stack-work/
-base-converter.cabal
+dist-docs
+dist-newstyle
+result
+stack.yaml.lock
 *~

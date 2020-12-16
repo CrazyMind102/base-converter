@@ -5,7 +5,11 @@ An app to convert one number from one base to another.
 ```
 $ > base-converter [digits of the number] baseOfNumber baseYouWantToHave
 ```
-
+Example:
+```
+$ > base-convert [1,2,4] 10 16
+7C₁₆
+```
 
 ## How to install
 You need to download stack or install it on your system through your package manager.

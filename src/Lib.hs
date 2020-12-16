@@ -33,12 +33,12 @@ add_ (x:xs) = "_" ++ [x] ++ (add_ xs)
 base :: Number -> Integer -> Number
 base n@(Number xs b0) b1
   | b0 == b1 = n
-  | otherwise = from10 (fromDigits n 0 0) (Number [] b1)
+  | otherwise = from10 (to10 n 0 0) (Number [] b1)
 
 
-fromDigits :: Number -> Integer -> Integer -> Integer
-fromDigits (Number [] _) _ r = r
-fromDigits (Number xs b) i r = fromDigits (Number (init xs) b) (i+1) (r + (b^i * (last xs)))
+to10 :: Number -> Integer -> Integer -> Integer
+to10 (Number [] _) _ r = r
+to10 (Number xs b) i r = to10 (Number (init xs) b) (i+1) (r + (b^i * (last xs)))
 
 
 from10 :: Integer -> Number -> Number
