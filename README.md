@@ -7,9 +7,9 @@ $ > base-converter [digits of the number] baseOfNumber baseYouWantToHave
 ```
 Example:
 ```
-$ > base-convert [1,2,4] 10 16
+$ > base-converter [1,2,4] 10 16
 7C₁₆
-$ > base-convert [10,8,13] 16 10
+$ > base-converter [10,8,13] 16 10
 2701₁₀
 ```
 
