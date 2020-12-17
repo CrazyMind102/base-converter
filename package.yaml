@@ -29,7 +29,7 @@ library:
 executables:
   base-converter:
     main:                Main.hs
-    source-dirs:         app
+    source-dirs:         exe
     ghc-options:
     - -threaded
     - -rtsopts

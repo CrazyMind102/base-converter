@@ -1,3 +1,8 @@
 # Changelog for base-converter
 
-## Unreleased changes
+## 0.1.0.1
+- Adding of documentation
+- Adding of error handling
+
+# 0.1.0.0
+- first release

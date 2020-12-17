@@ -27,7 +27,7 @@ source-repository head
 
 library
   exposed-modules:
-      Lib
+      Data.BaseNumber
   other-modules:
       Paths_base_converter
   hs-source-dirs:
@@ -42,7 +42,7 @@ executable base-converter
   other-modules:
       Paths_base_converter
   hs-source-dirs:
-      app
+      exe
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
