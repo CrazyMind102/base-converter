@@ -1,3 +1,11 @@
+{-|
+    BaseNumber.hs - Library to transform a number from one base to another
+
+    (C) 2020 Tim Gravert <crazymind102@googlemail.com>
+
+    License: BSD 3-Clause
+-}
+  
 {-# LANGUAGE UnicodeSyntax              #-}
 
 module Data.BaseNumber
