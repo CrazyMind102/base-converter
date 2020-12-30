@@ -14,15 +14,42 @@ $ > base-converter [10,8,13] 16 10
 ```
 
 ## How to install
-You need to download stack or install it on your system through your package manager.
+### Using cabal
+You need to download cabal or install it on your system through your package manager.
 
-Then you download the repository through git or manual.
+Then you download the repository or clone it with git.
 
-After unpacking or downloading from git you have to switch into the folder of base-converter.
+After unpacking or cloning switch into the folder of base-conveter.
 
-Then run stack `setup setup` followed by `stack install`.
+Then run `cabal new-install`.
 ```
 $ > cd base-converter
-$ > stack build
+$ > cabal new-install
+```
+
+### Using stack
+You need to download stack or install it on your system through your package manager.
+
+Then you download the repository or clone it with git.
+
+After unpacking or cloning switch into the folder of base-conveter.
+
+Then run `stack setup` followed by `stack install`.
+```
+$ > cd base-converter
+$ > stack setup
 $ > stack install
+```
+
+### Using nix
+You need to download stack or install it on your system through your package manager.
+
+Then you download the repository or clone it with git.
+
+After unpacking or cloning switch into the folder of base-conveter.
+
+Then run `nix-build release.nix`.
+```
+$ > cd base-converter
+$ > nix-build release.nix
 ```
