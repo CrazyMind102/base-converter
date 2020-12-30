@@ -46,7 +46,8 @@ add_ [] = ""
 add_ (x:xs) = "_" ++ [x] ++ (add_ xs)
 
 
--- | Function for base transformation
+-- | Function for base transformation.
+-- The Integer represents the new base.
 base :: Number -> Integer -> Number
 base n@(Number xs b0) b1
   | b0 == b1 = n
@@ -67,5 +68,6 @@ from10 n (Number xs b) = from10 (div n b) (Number ((mod n b) : xs) b)
 
 
 -- | Function to print the result of base transformation
+-- The Integer represents the new base.
 basePrint :: Number -> Integer -> IO ()
 basePrint x y = print (base x y)

@@ -11,7 +11,7 @@
 module Main where
 
 
-import Data.BaseNumber
+import Data.BaseNumber(basePrint,Number(Number))
 
 import Control.Exception
 import Data.Maybe

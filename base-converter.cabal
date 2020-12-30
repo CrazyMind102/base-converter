@@ -7,7 +7,7 @@ cabal-version: 1.12
 -- hash: 9567ecbad0c50424314552d768b0b4bf9021566dbf86dcf9f09155a9327db45f
 
 name:           base-converter
-version:        0.1.0.0
+version:        0.1.0.2
 description:    Please see the README on GitHub at <https://github.com/crazymind102/base-converter#readme>
 homepage:       https://github.com/crazymind102/base-converter#readme
 bug-reports:    https://github.com/crazymind102/base-converter/issues
@@ -43,6 +43,7 @@ executable base-converter
   main-is: Main.hs
   other-modules:
       Paths_base_converter
+    , Data.BaseNumber
   hs-source-dirs:
       src
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
