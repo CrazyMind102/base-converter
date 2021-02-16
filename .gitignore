@@ -6,3 +6,5 @@ documentation.sh
 result
 stack.yaml.lock
 *~
+*.yaml.1s
+*.yaml.result
